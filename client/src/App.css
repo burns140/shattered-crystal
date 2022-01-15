@@ -1,0 +1,66 @@
+.App {
+	text-align: center;
+    font-family: 'Segoe UI', Frutiger, 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	color: red;
+	height: 100vh;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	/* background: rgb(17,17,16);
+	background: linear-gradient(315deg, rgba(17,17,16,1) 0%, rgba(79,83,83,0.7399553571428572) 50%, rgba(17,17,16,1) 100%);
+	background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background-attachment: scroll;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(212,227,250,0.11)%22%20stroke-width%3D%223.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(26deg, rgba(201,131,148,0.639) 17%, rgba(84, 177, 97, 0.631) 100%), url("./images/home-bg.jpg");
+    background-size: 461px, cover, cover;
+    background-position: center, 0% 0%, center;
+    background-repeat: repeat, repeat, no-repeat;
+    background-color: #FFFFFF;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.flexstart {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	min-height: 100vh;
+	position: relative;
+	/* background-image: url("./images/home-bg.jpg");
+	background-size: cover; */
+}

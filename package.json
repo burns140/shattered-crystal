@@ -1,38 +1,25 @@
 {
   "name": "shattered-crystal",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.3"
-  },
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "./server/server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start-client": "(cd ./client && react-scripts start)",
+    "build": "(cd ./client && npm install && react-scripts build) && (cd ./server && npm install)",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ./server && npm install && npm start"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burns140/personal-website.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burns140/personal-website/issues"
+  },
+  "homepage": "https://github.com/burns140/personal-website#readme",
+  "dependencies": {
+    "react-scripts": "^4.0.3"
   }
 }
